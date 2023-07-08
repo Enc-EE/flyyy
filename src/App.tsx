@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
+// import reactLogo from "./assets/react.svg";
+// import viteLogo from "/vite.svg";
 import flyImage from "./assets/fruit-fly-g491a21229_640.png";
 import "./App.css";
 import { Box } from "@mui/material";
