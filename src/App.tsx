@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 // import reactLogo from "./assets/react.svg";
 // import viteLogo from "/vite.svg";
 import flyImage from "./assets/fruit-fly-g491a21229_640.png";
@@ -57,10 +57,10 @@ class Fly {
 }
 
 function App() {
-  const [count, setCount] = useState(0);
+  // const [count, setCount] = useState(0);
   const canvasRef = React.createRef<HTMLCanvasElement>();
 
-  const element = document.getElementById("some-element-you-want-to-animate");
+  // const element = document.getElementById("some-element-you-want-to-animate");
   let start: number | undefined;
   let previousTimeStamp: number | undefined;
   // let done = false;
@@ -74,7 +74,7 @@ function App() {
     if (previousTimeStamp === undefined) {
       previousTimeStamp = timeStamp;
     }
-    const elapsed = timeStamp - start;
+    // const elapsed = timeStamp - start;
     const relElapsed = timeStamp - previousTimeStamp;
 
     if (canvasRef.current !== null) {
