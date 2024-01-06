@@ -38,8 +38,8 @@ class Fly {
     ctx: CanvasRenderingContext2D
   ) {
     if (
-      Math.abs(this.targetX - this.x) < 1 &&
-      Math.abs(this.targetY - this.y) < 1
+      Math.abs(this.targetX - this.startX) <= Math.abs(this.x - this.startX) &&
+      Math.abs(this.targetY - this.startY) <= Math.abs(this.y - this.startY)
     ) {
       this.startX = this.targetX;
       this.startY = this.targetY;
